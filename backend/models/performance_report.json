@@ -1,0 +1,59 @@
+{
+  "task": "regression",
+  "equal_weightage_mode": true,
+  "dataset_size": 400000,
+  "num_features_original": 25,
+  "num_features_engineered": 0,
+  "num_features_final": 37,
+  "train_size": 320000,
+  "test_size": 80000,
+  "advanced_features_enabled": false,
+  "resampling_method": null,
+  "hyperparameter_tuning": false,
+  "neural_network_trained": false,
+  "test_scores": {
+    "Ridge_Equal": {
+      "MAE": 187555.8164927583,
+      "RMSE": 242917.49931415997,
+      "R2": 0.7581941598543339,
+      "MAPE": 10.059265086827166
+    },
+    "EqualWeight_Ensemble": {
+      "MAE": 187674.69338143631,
+      "RMSE": 242985.4006794088,
+      "R2": 0.7580589597023036,
+      "MAPE": 10.075804800473863
+    },
+    "Constrained_NN": {
+      "MAE": 188585.71811971779,
+      "RMSE": 244045.3478161893,
+      "R2": 0.7559435730018323,
+      "MAPE": 10.140740916591515
+    }
+  },
+  "equal_weightage_validation": {
+    "max_feature_importance_pct": 11.747445783711731,
+    "max_feature_name": "boy_first_marriage_yes",
+    "coefficient_of_variation": 1.2604873690437728,
+    "threshold_check_passed": true,
+    "cv_check_passed": true,
+    "overall_validation_passed": true
+  },
+  "stability_analysis": {
+    "train_metric": 0.7598207408214193,
+    "test_metric": 0.7580589597023036,
+    "gap": 0.001761781119115624,
+    "metric_name": "R2",
+    "scoring": "r2",
+    "cv_scores": [
+      0.7598777995365781,
+      0.755062063324575,
+      0.7579765894275006,
+      0.7590839007291621,
+      0.7601643966796201
+    ],
+    "cv_mean": 0.7584329499394873,
+    "cv_std": 0.0018482627838163907,
+    "verdict": "HIGHLY STABLE"
+  }
+}

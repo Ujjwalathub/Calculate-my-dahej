@@ -1,0 +1,54 @@
+{
+  "single_prediction_example": {
+    "monthly_recurring_revenue": 150000,
+    "patents_held": 12,
+    "infrastructure_value": 5000000,
+    "fleet_value": 2000000,
+    "liquid_cash_reserves": 800000,
+    "parent_company_revenue": 120000,
+    "business_model": "B2B_Enterprise",
+    "brand_reputation": "Industry_Leader",
+    "tech_sector": "AI_DeepTech",
+    "pending_lawsuits": "no",
+    "years_in_operation": 5.8,
+    "is_first_acquisition": "yes"
+  },
+  "batch_prediction_example": {
+    "startups": [
+      {
+        "monthly_recurring_revenue": 150000,
+        "patents_held": 12,
+        "infrastructure_value": 5000000,
+        "fleet_value": 2000000,
+        "liquid_cash_reserves": 800000,
+        "parent_company_revenue": 120000,
+        "business_model": "B2B_Enterprise",
+        "brand_reputation": "Industry_Leader",
+        "tech_sector": "AI_DeepTech",
+        "pending_lawsuits": "no",
+        "years_in_operation": 5.8,
+        "is_first_acquisition": "yes"
+      },
+      {
+        "monthly_recurring_revenue": 80000,
+        "patents_held": 5,
+        "infrastructure_value": 2000000,
+        "fleet_value": null,
+        "liquid_cash_reserves": 300000,
+        "parent_company_revenue": 60000,
+        "business_model": "B2C_Consumer",
+        "brand_reputation": "Established",
+        "tech_sector": "SaaS",
+        "pending_lawsuits": "no",
+        "years_in_operation": 5.9,
+        "is_first_acquisition": "yes"
+      }
+    ]
+  },
+  "curl_examples": {
+    "health_check": "curl -X GET http://localhost:8000/health",
+    "model_info": "curl -X GET http://localhost:8000/model/info",
+    "single_prediction": "curl -X POST http://localhost:8000/predict -H \"Content-Type: application/json\" -d @single_prediction.json",
+    "batch_prediction": "curl -X POST http://localhost:8000/predict/batch -H \"Content-Type: application/json\" -d @batch_prediction.json"
+  }
+}

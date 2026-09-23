@@ -1,0 +1,33 @@
+# Web Framework
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+numpy
+pandas
+joblib
+seaborn
+matplotlib
+imblearn
+
+# API Documentation
+python-multipart
+
+# CORS & Middleware
+python-jose
+passlib
+
+# Testing
+pytest
+httpx
+
+# Logging & Monitoring
+python-json-logger
+
+# Utilities
+python-dotenv
